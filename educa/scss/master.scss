@@ -1,0 +1,189 @@
+$azul: #0085C2;
+$gris: #929799;
+$rojo: #ee2e40;
+
+$fontSize: 18px;
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    background-image: url("../img/fondo.png");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    main {
+        flex: 1 0 auto;
+    }
+}
+
+.contents {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .rueda {
+        min-width: 450px;
+        max-width: 450px;
+        min-height: 450px;
+        max-height: 450px;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .circulo {
+        position: absolute;
+        min-width: 380px;
+        max-width: 380px;
+        min-height: 380px;
+        max-height: 380px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+
+        &.azul {
+            background-color: $azul;
+        }
+
+        img {
+            width: 45%;
+            height: auto;
+            margin-bottom: 15px
+        }
+
+        p {
+            font-family: 'Bryant Pro';
+            font-weight: bold;
+            font-size: $fontSize + 2;
+            line-height: 1;
+        }
+    }
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .rows {
+        display: flex;
+        flex-direction: column;
+
+        i {
+            color: $azul;
+            margin-bottom: 20px;
+            font-size: $fontSize + 12;
+
+            &:first-child,
+            &:last-child {
+                cursor: pointer;
+            }
+
+            &:last-child{
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    .numbers{
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+
+        span{
+            font-family: 'Bryant Pro';
+            line-height: 1;
+            font-weight: bold;
+
+            &:nth-child(1){
+                margin-top: -5px;
+                font-size: $fontSize + 22;
+                color: $azul;
+            }
+            &:nth-child(2){
+                margin: 0 3px 0 10px;
+                font-size: $fontSize;
+                color: $gris;
+            }
+            &:nth-child(3){
+                font-size: $fontSize;
+                color: $gris;
+            }
+        }
+    }
+}
+
+.enlaces{
+    a{
+        display: block;
+        margin-bottom: 10px;
+        width: 250px;
+        font-family: 'Bryant Pro';
+        font-weight: bold;
+        font-size: $fontSize - 4;
+        line-height: 1;
+        color: $azul;
+    
+        > span{
+            color: $rojo;
+        }
+
+        .animation{
+            position: absolute;
+            margin-top: 0px;
+            margin-left: -25px;
+            width: 10px;
+            height: 10px;
+            transform: translateY(5px) translateX(-15px) rotate(-45deg);
+            
+            > span{
+                position: absolute;
+                top: 0;
+                left: 0;
+                display: block;
+                width: 100%;
+                height: 100%;
+                border-bottom: 1px solid $azul;
+                border-right: 1px solid $azul;
+                animation: enlaces 1.2s linear infinite;
+                opacity: 0;
+
+                &:nth-child(1){
+                    transform: translateY(-10px) translateX(-10px);
+                    animation-delay: -0.4s;
+                }
+                &:nth-child(2){
+                    transform: translateY(0px) translateX(0px);
+                    animation-delay: -0.2s;
+                }
+                &:nth-child(3){
+                    transform: translateY(10px) translateX(10px);
+                    animation-delay: 0s;
+                }
+            }
+        }
+    }
+}
+
+@keyframes enlaces{
+    0%{
+        opacity: 0;
+        margin-left: -5px;
+        margin-top: -5px;
+    }
+    25%{
+        opacity: 1;
+        margin-left: 0px;
+        margin-top: 0px;
+    }
+    100%{
+        opacity: 0;
+        margin-left: 5px;
+        margin-top: 5px;
+    }
+
+}
