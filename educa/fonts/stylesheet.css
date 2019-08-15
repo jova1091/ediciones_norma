@@ -1,0 +1,96 @@
+@font-face {
+    font-family: 'Bryant Pro';
+    src: url('BryantPro-Bold.woff2') format('woff2'),
+        url('BryantPro-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Bryant Pro Regular Alternate';
+    src: url('BryantPro-RegularAlternate.woff2') format('woff2'),
+        url('BryantPro-RegularAlternate.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Bryant Pro Regular';
+    src: url('BryantPro-RegularItalic.woff2') format('woff2'),
+        url('BryantPro-RegularItalic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Bryant Pro Light Alternate';
+    src: url('BryantPro-LightAlternate.woff2') format('woff2'),
+        url('BryantPro-LightAlternate.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Bryant Pro Medium Alternate';
+    src: url('BryantPro-MediumAlternate.woff2') format('woff2'),
+        url('BryantPro-MediumAlternate.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Bryant Pro';
+    src: url('BryantPro-Light.woff2') format('woff2'),
+        url('BryantPro-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Bryant Pro';
+    src: url('BryantPro-BoldItalic.woff2') format('woff2'),
+        url('BryantPro-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Bryant Pro';
+    src: url('BryantPro-LightItalic.woff2') format('woff2'),
+        url('BryantPro-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Bryant Pro Bold Alternate';
+    src: url('BryantPro-BoldAlternate.woff2') format('woff2'),
+        url('BryantPro-BoldAlternate.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Bryant Pro';
+    src: url('BryantPro-Regular.woff2') format('woff2'),
+        url('BryantPro-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Bryant Pro';
+    src: url('BryantPro-MediumItalic.woff2') format('woff2'),
+        url('BryantPro-MediumItalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Bryant Pro';
+    src: url('BryantPro-Medium.woff2') format('woff2'),
+        url('BryantPro-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
