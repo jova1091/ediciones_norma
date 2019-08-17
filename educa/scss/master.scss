@@ -1,44 +1,179 @@
-$azul: #0085C2;
+$azul: #0098D6;
 $gris: #929799;
-$rojo: #ee2e40;
+$rojo: #E1343A;
+$fucsia: #DF388E;
+$verde: #00A082;
+$amarillo: #EF8F22;
+$morado: #613B8F;
+$aqua: #00A3AD;
+$lila: #993F91;
+$blanco: #fff;
 
 $fontSize: 18px;
 
+// Estilos generales
+//****************************************************************
 body {
     display: flex;
     min-height: 100vh;
     flex-direction: column;
+    overflow: hidden;
+
+    main {
+        flex: 1 0 auto;
+        font-family: 'Bryant Pro' !important;
+        font-weight: normal;
+
+        b,strong{
+            font-weight: bold;
+        }
+    }
+}
+
+.row {
+    margin-bottom: 0;
+}
+
+.content-centered {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.valign-centered {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.margin-top {
+    margin-top: 35px;
+}
+
+.margin-top-xl {
+    margin-top: 100px;
+}
+
+.margin-top-none {
+    margin-top: 0px;
+}
+
+.x-small {
+    height: 250px;
+}
+
+.fondo{
     background-image: url("../img/fondo.png");
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
+}
 
-    main {
-        flex: 1 0 auto;
+h3{
+    font-family: 'Bryant Pro';
+    font-weight: bold;
+}
+
+h5{
+    font-family: 'Bryant Pro';
+    font-weight: normal;
+}
+
+.text-azul{
+    color: $azul;
+}
+
+.bck-azul{
+    background-color: $azul;
+    &:hover,&:focus{
+        background-color: $blanco;
+        border: 1px solid $azul;
+        i{
+            color: $azul;
+        }
     }
 }
 
+.text-red{
+    color: $rojo;
+}
+
+.logo-home{
+    position: relative;
+    width: 40px;
+    height: auto;
+    float: right;
+    right: 20px;
+    top: 20px;
+}
+
+// Flechas de navegación
+//****************************************************************
+.rows {
+    display: flex;
+    flex-direction: column;
+
+    i {
+        color: $azul;
+        margin-bottom: 20px;
+        font-size: $fontSize + 12;
+
+        &:first-child,
+        &:last-child {
+            cursor: pointer;
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.numbers {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+    span {
+        font-family: 'Bryant Pro';
+        line-height: 1;
+        font-weight: bold;
+
+        &:nth-child(1) {
+            margin-top: -5px;
+            font-size: $fontSize + 22;
+            color: $azul;
+        }
+
+        &:nth-child(2) {
+            margin: 0 3px 0 10px;
+            font-size: $fontSize;
+            color: $gris;
+        }
+
+        &:nth-child(3) {
+            font-size: $fontSize;
+            color: $gris;
+        }
+    }
+}
+
+// Rueda central
+//****************************************************************
 .contents {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 
-    .rueda {
-        min-width: 450px;
-        max-width: 450px;
-        min-height: 450px;
-        max-height: 450px;
-        display: block;
-        margin: 0 auto;
-    }
-
     .circulo {
         position: absolute;
-        min-width: 380px;
-        max-width: 380px;
-        min-height: 380px;
-        max-height: 380px;
+        min-width: 370px;
+        max-width: 370px;
+        min-height: 370px;
+        max-height: 370px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -64,83 +199,31 @@ body {
     }
 }
 
-.navigation {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-    .rows {
-        display: flex;
-        flex-direction: column;
-
-        i {
-            color: $azul;
-            margin-bottom: 20px;
-            font-size: $fontSize + 12;
-
-            &:first-child,
-            &:last-child {
-                cursor: pointer;
-            }
-
-            &:last-child{
-                margin-bottom: 0;
-            }
-        }
-    }
-
-    .numbers{
-        display: flex;
-        justify-content: center;
-        align-items: flex-start;
-
-        span{
-            font-family: 'Bryant Pro';
-            line-height: 1;
-            font-weight: bold;
-
-            &:nth-child(1){
-                margin-top: -5px;
-                font-size: $fontSize + 22;
-                color: $azul;
-            }
-            &:nth-child(2){
-                margin: 0 3px 0 10px;
-                font-size: $fontSize;
-                color: $gris;
-            }
-            &:nth-child(3){
-                font-size: $fontSize;
-                color: $gris;
-            }
-        }
-    }
-}
-
-.enlaces{
-    a{
+// Enlaces a la derecha
+//****************************************************************
+.enlaces {
+    a {
         display: block;
         margin-bottom: 10px;
-        width: 250px;
         font-family: 'Bryant Pro';
         font-weight: bold;
         font-size: $fontSize - 4;
         line-height: 1;
         color: $azul;
-    
-        > span{
+
+        >span {
             color: $rojo;
         }
 
-        .animation{
+        .animation {
             position: absolute;
             margin-top: 0px;
             margin-left: -25px;
             width: 10px;
             height: 10px;
             transform: translateY(5px) translateX(-15px) rotate(-45deg);
-            
-            > span{
+
+            >span {
                 position: absolute;
                 top: 0;
                 left: 0;
@@ -152,15 +235,17 @@ body {
                 animation: enlaces 1.2s linear infinite;
                 opacity: 0;
 
-                &:nth-child(1){
+                &:nth-child(1) {
                     transform: translateY(-10px) translateX(-10px);
                     animation-delay: -0.4s;
                 }
-                &:nth-child(2){
+
+                &:nth-child(2) {
                     transform: translateY(0px) translateX(0px);
                     animation-delay: -0.2s;
                 }
-                &:nth-child(3){
+
+                &:nth-child(3) {
                     transform: translateY(10px) translateX(10px);
                     animation-delay: 0s;
                 }
@@ -169,21 +254,57 @@ body {
     }
 }
 
-@keyframes enlaces{
-    0%{
+@keyframes enlaces {
+    0% {
         opacity: 0;
         margin-left: -5px;
         margin-top: -5px;
     }
-    25%{
+
+    25% {
         opacity: 1;
         margin-left: 0px;
         margin-top: 0px;
     }
-    100%{
+
+    100% {
         opacity: 0;
         margin-left: 5px;
         margin-top: 5px;
     }
 
+}
+
+
+// Cards
+//****************************************************************
+.card {
+    border-radius: 10px;
+
+    .card-image {
+        img {
+            border-radius: 10px 10px 0 0;
+        }
+    }
+
+    .card-content {
+        padding: 15px 15px 40px;
+        text-align: center;
+
+        .btn-floating {
+            width: 50px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            bottom: 0px;
+            right: 0;
+            border-radius: 50% 50% 10px;
+
+            i {
+                font-weight: bolder;
+            }
+        }
+    }
 }
