@@ -22,12 +22,12 @@
                 <div class="content-centered">
                     <div class="col s12 valign-centered ">
                         <div class="rows hide animated slow">
-                            <i class="material-icons">arrow_upward</i>
+                            <i id="rowUp" class="material-icons">arrow_upward</i>
                             <i class="material-icons">remove</i>
-                            <i class="material-icons">arrow_downward</i>
+                            <i id="rowDown" class="material-icons">arrow_downward</i>
                         </div>
                         <div class="numbers hide animated slow">
-                            <span>1</span>
+                            <span id="contador">1</span>
                             <span>/</span>
                             <span>7</span>
                         </div>
@@ -41,17 +41,28 @@
                             alt="">
                         <div class="circulo azul hide animated slow">
                             <img id="logo" src="img/logo.png" alt="" class="responsive-img hide animated ">
-                            <p id="txt-intro" class="hide animated">Educación y pedagogía<br>para un mundo mejor</p>
-                            <p class="hide">Educa ayuda a formar<br>ciudadanos del mundo</p>
-                            <p class="hide">Educa ofrece un modelo de<br>aprendizaje combinado que se<br>articula en
-                                secuencias didácticas</p>
-                            <p class="hide">Educa promueve el aprendizaje<br>situado para vincular la<br>escuela y la
-                                vida</p>
-                            <p class="hide">Educa desarrolla la competencia<br>para aprender a aprender</p>
-                            <p class="hide">Educa ofrece un sistema<br>de evaluación</p>
-                            <p class="hide">Educa tiene en cuenta a<br>todos los miembros de la<br>comunidad educativa
+                            <p id="txt-intro" class="hide animated slow">Educación y pedagogía<br>para un mundo mejor
                             </p>
-                            <p class="hide">Educa cuenta con un<br>servicio integrado de<br>formación y consultoría</p>
+                            <p id="txt-1" class="textos hide animated slow">Educa ayuda a formar<br>ciudadanos del mundo
+                            </p>
+                            <p id="txt-2" class="textos hide animated slow">Educa ofrece un modelo de<br>aprendizaje
+                                combinado
+                                que se<br>articula en
+                                secuencias didácticas</p>
+                            <p id="txt-3" class="textos hide animated slow">Educa promueve el aprendizaje<br>situado
+                                para
+                                vincular la<br>escuela y la
+                                vida</p>
+                            <p id="txt-4" class="textos hide animated slow">Educa desarrolla la competencia<br>para
+                                aprender a
+                                aprender</p>
+                            <p id="txt-5" class="textos hide animated slow">Educa ofrece un sistema<br>de evaluación</p>
+                            <p id="txt-6" class="textos hide animated slow">Educa tiene en cuenta a<br>todos los
+                                miembros de
+                                la<br>comunidad educativa
+                            </p>
+                            <p id="txt-7" class="textos hide animated slow">Educa cuenta con un<br>servicio integrado
+                                de<br>formación y consultoría</p>
                         </div>
                     </div>
                 </div>
@@ -59,7 +70,7 @@
             <div class="col s12 m12 l2 offset-l1">
                 <div class="content-centered">
                     <div class="enlaces">
-                        <a id="e1-1" href="#1-1" class="hide animated slow">
+                        <a id="e1-1" href="#1-1" class="enlace hide animated slow">
                             <div class="animation">
                                 <span></span>
                                 <span></span>
@@ -67,7 +78,7 @@
                             </div>
                             Aprende sobre como Educa ayuda a formar ciudadanos del mundo
                         </a>
-                        <a id="e1-2" href="#1-2" class="hide animated slow">
+                        <a id="e1-2" href="#1-2" class="enlace hide animated slow">
                             <div class="animation">
                                 <span></span>
                                 <span></span>
@@ -75,7 +86,7 @@
                             </div>
                             Educación socioemocional <span>(novedad)</span>
                         </a>
-                        <a id="e2-1" href="#2-1" class="hide">
+                        <a id="e2-1" href="#2-1" class="enlace hide animated slow">
                             <div class="animation">
                                 <span></span>
                                 <span></span>
@@ -83,7 +94,7 @@
                             </div>
                             Recursos digitales de nueva generación <span>(novedad)</span>
                         </a>
-                        <a id="e2-2" href="#2-2" class="hide">
+                        <a id="e2-2" href="#2-2" class="enlace hide animated slow">
                             <div class="animation">
                                 <span></span>
                                 <span></span>
@@ -91,7 +102,7 @@
                             </div>
                             Las secuencias didácticas: el libro digital y el plan de clases <span>(ver)</span>
                         </a>
-                        <a id="e2-3" href="#2-3" class="hide">
+                        <a id="e2-3" href="#2-3" class="enlace hide animated slow">
                             <div class="animation">
                                 <span></span>
                                 <span></span>
@@ -99,7 +110,7 @@
                             </div>
                             Las secuencias didácticas de Educa
                         </a>
-                        <a id="e3-1" href="3-1" class="hide">
+                        <a id="e3-1" href="#3-1" class="enlace hide animated slow">
                             <div class="animation">
                                 <span></span>
                                 <span></span>
@@ -107,7 +118,7 @@
                             </div>
                             ¿Cómo funcionan los proyectos académicos y de aprendizaje servicio?
                         </a>
-                        <a id="e3-2" href="3-2" class="hide">
+                        <a id="e3-2" href="#3-2" class="enlace hide animated slow">
                             <div class="animation">
                                 <span></span>
                                 <span></span>
@@ -115,7 +126,7 @@
                             </div>
                             ¿Para qué aprendemos? <span>(novedad)</span>
                         </a>
-                        <a id="e4-1" href="4-1" class="hide">
+                        <a id="e4-1" href="#4-1" class="enlace hide animated slow">
                             <div class="animation">
                                 <span></span>
                                 <span></span>
@@ -123,7 +134,7 @@
                             </div>
                             Ver los tres ámbitos donde Educa desarrolla la competencia para aprender a aprender
                         </a>
-                        <a id="e5-1" href="5-1" class="hide">
+                        <a id="e5-1" href="#5-1" class="enlace hide animated slow">
                             <div class="animation">
                                 <span></span>
                                 <span></span>
@@ -131,7 +142,7 @@
                             </div>
                             Ver los tipos de evaluaciones y módulo de calificaciones
                         </a>
-                        <a id="e6-1" href="6-1" class="hide">
+                        <a id="e6-1" href="#6-1" class="enlace hide animated slow">
                             <div class="animation">
                                 <span></span>
                                 <span></span>
@@ -139,7 +150,7 @@
                             </div>
                             Ver todos los miembros de la comunidad educativa que Educa tiene en cuenta
                         </a>
-                        <a id="e7-1" href="7-1" class="hide">
+                        <a id="e7-1" href="#7-1" class="enlace hide animated slow">
                             <div class="animation">
                                 <span></span>
                                 <span></span>
@@ -157,7 +168,8 @@
             </a>
             <div class="content-centered">
                 <div class="col s12 m12 l12 center-align">
-                    <h3 id="ttl-1-1-1" class="text-azul title hide animated slow">Educa ayuda a formar ciudadanos<br>del mundo</h3>
+                    <h3 id="ttl-1-1-1" class="text-azul title hide animated slow">Educa ayuda a formar ciudadanos<br>del
+                        mundo</h3>
                     <h5 id="ttl-1-1-2" class="subtitle hide animated slow">Un ciudadano del mundo:</h5>
                 </div>
                 <div class="col s12 m12 l12 margin-top">
@@ -168,7 +180,7 @@
                             </div>
                             <div class="card-content">
                                 <p><b>Reconoce y acepta la diversidad</b> de las personas</p>
-                                <a class="btn-floating waves-effect waves-light bck-azul modal-trigger hide animated slow"
+                                <a class="btn-floating waves-effect hidden waves-light bck-azul modal-trigger hide animated slow"
                                     href="#modal1">
                                     <i class="material-icons">add</i>
                                 </a>
@@ -183,7 +195,7 @@
                             <div class="card-content">
                                 <p><b>Es consciente, responsable y comprometido</b> con la sociedad y el medio ambiente
                                 </p>
-                                <a class="btn-floating waves-effect waves-light bck-azul modal-trigger hide animated slow"
+                                <a class="btn-floating waves-effect hidden waves-light bck-azul modal-trigger hide animated slow"
                                     href="#modal1">
                                     <i class="material-icons">add</i>
                                 </a>
@@ -197,7 +209,7 @@
                             </div>
                             <div class="card-content">
                                 <p><b>Aprende de forma autónoma</b> y durante toda la vida</p>
-                                <a class="btn-floating waves-effect waves-light bck-azul modal-trigger hide animated slow"
+                                <a class="btn-floating waves-effect hidden waves-light bck-azul modal-trigger hide animated slow"
                                     href="#modal1">
                                     <i class="material-icons">add</i>
                                 </a>
@@ -210,9 +222,10 @@
                                 <img src="img/card-1-1-4.png" class="">
                             </div>
                             <div class="card-content">
-                                <p><b>Aplica el conocimiento</b> para problemas y tomar con <b>sentido crítico</b> en
+                                <p><b>Aplica el conocimiento</b> para resolver problemas y tomar decisiones con
+                                    <b>sentido crítico</b> en
                                     diferentes situaciones</p>
-                                <a class="btn-floating waves-effect waves-light bck-azul modal-trigger hide animated slow"
+                                <a class="btn-floating waves-effect waves-light hidden bck-azul modal-trigger hide animated slow"
                                     href="#modal1">
                                     <i class="material-icons">add</i>
                                 </a>
@@ -220,7 +233,7 @@
                         </div>
                     </div>
                     <div class="col s12 m3 l2">
-                        <div id="card1-1-5" class="card small hide animated slow">
+                        <div id="card1-1-5" class="card small hoverable hide animated slow">
                             <div class="card-image">
                                 <img src="img/card-1-1-5.png" class="">
                             </div>
@@ -243,8 +256,10 @@
             <div class="content-centered">
                 <div class="row">
                     <div class="col s12 m12 l12">
-                        <h6 id="ttl-1-2-1" class="text-red hide animated slow"><b>Novedad</b></h6>
-                        <h3 id="ttl-1-2-2" class="text-azul margin-top-nonettl- hide animated slow">Educación socioemocional</h3>
+                        <h6 id="ttl-1-2-1" class="text-red title hide animated slow"><b>Novedad</b></h6>
+                        <h3 id="ttl-1-2-2" class="text-azul margin-top-none subtitle hide animated slow">Educación
+                            socioemocional
+                        </h3>
                     </div>
                 </div>
                 <div class="col s12 m12 l12 margin-top-xl">
@@ -252,11 +267,12 @@
                         <div class="col s12 m3 l3">
                             <div id="card1-2-1" class="card x-small hide animated slow">
                                 <div class="card-image">
-                                    <img src="img/card-1-1-1.png" class="">
+                                    <img src="img/card-1-2-1.png" class="">
                                 </div>
                                 <div class="card-content">
                                     <p><b>Autoestima</b></p>
-                                    <a class="btn-floating waves-effect waves-light bck-azul modal-trigger hide animated slow" href="#modal1">
+                                    <a class="btn-floating waves-effect waves-light hidden bck-aqua modal-trigger hide animated slow"
+                                        href="#modal1">
                                         <i class="material-icons">add</i>
                                     </a>
                                 </div>
@@ -265,11 +281,12 @@
                         <div class="col s12 m3 l3">
                             <div id="card1-2-2" class="card x-small hide animated slow">
                                 <div class="card-image">
-                                    <img src="img/card-1-1-1.png" class="">
+                                    <img src="img/card-1-2-2.png" class="">
                                 </div>
                                 <div class="card-content">
                                     <p><b>Gestión de emociones y sentimientos</b></p>
-                                    <a class="btn-floating waves-effect waves-light bck-azul modal-trigger hide animated slow" href="#modal1">
+                                    <a class="btn-floating waves-effect waves-light hidden bck-aqua modal-trigger hide animated slow"
+                                        href="#modal1">
                                         <i class="material-icons">add</i>
                                     </a>
                                 </div>
@@ -278,11 +295,12 @@
                         <div class="col s12 m3 l3">
                             <div id="card1-2-3" class="card x-small hide animated slow">
                                 <div class="card-image">
-                                    <img src="img/card-1-1-1.png" class="">
+                                    <img src="img/card-1-2-3.png" class="">
                                 </div>
                                 <div class="card-content">
                                     <p><b>Lenguaje</b></p>
-                                    <a class="btn-floating waves-effect waves-light bck-azul modal-trigger hide animated slow" href="#modal1">
+                                    <a class="btn-floating waves-effect waves-light bck-aqua hidden modal-trigger hide animated slow"
+                                        href="#modal1">
                                         <i class="material-icons">add</i>
                                     </a>
                                 </div>
@@ -291,11 +309,12 @@
                         <div class="col s12 m3 l3">
                             <div id="card1-2-4" class="card x-small hide animated slow">
                                 <div class="card-image">
-                                    <img src="img/card-1-1-1.png" class="">
+                                    <img src="img/card-1-2-4.png" class="">
                                 </div>
                                 <div class="card-content">
                                     <p><b>Resolución positiva de conflictos</b></p>
-                                    <a class="btn-floating waves-effect waves-light bck-azul modal-trigger hide animated slow" href="#modal1">
+                                    <a class="btn-floating waves-effect waves-light bck-aqua hidden modal-trigger hide animated slow"
+                                        href="#modal1">
                                         <i class="material-icons">add</i>
                                     </a>
                                 </div>
@@ -305,6 +324,57 @@
                 </div>
             </div>
         </div>
+        <!-- Modal Structure for modal section 1 -->
+        <div id="modal1" class="modal">
+            <div class="modal-content">
+                <div class="slider fullscreen">
+                    <a href="#!" class="modal-close btn-close"><i class="material-icons">close</i></a>
+                    <ul class="slides">
+                        <li>
+                            <img src="img/ambiente.jpg">
+                            <div class="caption left-align">
+                                <hr>
+                                <h5 class="white-text">Los ciudadanos del mundo son conscientes, responsables y
+                                    comprometidos con la <b>sociedad</b> y el <b>medio ambiente</b></h5>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="img/diversidad2.jpg">
+                            <div class="caption left-align">
+                                <hr>
+                                <h5 class="white-text">Los ciudadanos del mundo reconocen y aceptan la diversidad de las
+                                    personas.</h5>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="img/aprendizaje.jpg">
+                            <div class="caption left-align">
+                                <hr>
+                                <h5 class="white-text">Los ciudadanos del mundo aprenden de forma autónoma y durante
+                                    toda la vida. </h5>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="img/problemas.jpg">
+                            <div class="caption left-align">
+                                <hr>
+                                <h5 class="white-text">Los ciudadanos del mundo aplican el conocimiento para resolver
+                                    problemas y tomar decisiones con sentido crítico en diferentes situaciones.</h5>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="img/tecnologia.jpg">
+                            <div class="caption left-align">
+                                <hr>
+                                <h5 class="white-text">Los ciudadanos del mundo utilizan la tecnología de forma
+                                    competente y responsable. </h5>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
         <div id="2-1" class="row fondo">
             <a href="#intro">
                 <img src="img/logo2.png" alt="Logo" class="logo-home">
@@ -312,38 +382,140 @@
             <div class="content-centered">
                 <div class="row">
                     <div class="col s12 m12 l12">
-                        <h6 class="red-text"><b>Novedad</b></h6>
-                        <h3 class="blue-text margin-top-none">Recursos digitales de nueva generación</h3>
+                        <h6 id="ttl2-1-1" class="text-red title hide animated slow"><b>Novedad</b></h6>
+                        <h3 id="ttl2-1-2" class="text-lila margin-top-none subtitle hide animated slow">Recursos
+                            digitales de nueva generación
+                        </h3>
                     </div>
                 </div>
                 <div class="col s12 m12 l12 margin-top-xl">
                     <div class="container">
                         <div class="col s12 m3 l3 offset-m2 offset-l2">
-                            <div class="card x-small">
+                            <div id="card2-1-1" class="card x-small hoverable hide animated slow">
                                 <div class="card-image">
-                                    <img src="img/card-1-1-1.png" class="">
+                                    <img src="img/card-2-1-1.png" class="">
                                 </div>
                                 <div class="card-content">
                                     <p><b>Ejemplo 1</b></p>
-                                    <a class="btn-floating waves-effect waves-light blue modal-trigger" href="#modal1">
+                                    <a class="btn-floating waves-effect waves-light bck-lila modal-trigger"
+                                        href="#modal2-1">
                                         <i class="material-icons">add</i>
                                     </a>
                                 </div>
                             </div>
                         </div>
                         <div class="col s12 m3 l3 offset-m2 offset-l2">
-                            <div class="card x-small">
+                            <div id="card2-1-2" class="card x-small hoverable hide animated slow">
                                 <div class="card-image">
-                                    <img src="img/card-1-1-1.png" class="">
+                                    <img src="img/card-2-1-2.png" class="">
                                 </div>
                                 <div class="card-content">
                                     <p><b>Ejemplo 2</b></p>
-                                    <a class="btn-floating waves-effect waves-light blue modal-trigger" href="#modal1">
+                                    <a class="btn-floating waves-effect waves-light bck-lila modal-trigger"
+                                        href="#modal2-2">
                                         <i class="material-icons">add</i>
                                     </a>
                                 </div>
                             </div>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal Structure for modal 1 section 2 -->
+        <div id="modal2-1" class="modal">
+            <a id="closeMdl2-1" href="#!" class="modal-close btn-close animated slow pulse infinite"><i
+                    class="material-icons">close</i></a>
+            <div class="modal-content">
+                <div class="video-responsive">
+                    <video controls>
+                        <source src="videos/ejemplo 1.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </div>
+        <!-- Modal Structure for modal 2 section 2 -->
+        <div id="modal2-2" class="modal">
+            <a id="closeMdl2-2" href="#!" class="modal-close btn-close animated slow pulse infinite"><i
+                    class="material-icons">close</i></a>
+            <div class="modal-content">
+                <div class="video-responsive">
+                    <video controls>
+                        <source src="videos/ejemplo 2.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </div>
+
+        <div id="2-3" class="row fondo">
+            <a href="#intro">
+                <img src="img/logo2.png" alt="Logo" class="logo-home">
+            </a>
+            <div class="content-centered">
+                <div class="row">
+                    <div class="col s12 m12 l12">
+                        <h3 id="ttl2-3-1" class="text-lila margin-top-none title hide animated slow">Las secuencias didácticas de Educa</h3>
+                    </div>
+                </div>
+                <div class="row valign-centered margin-top-xl">
+                    <div class="col s2 m2 l2 offset-m1 offset-l1">
+                        <div class="ajuste part1 elem1 animated slow hide"></div>
+                        <img src="img/part1.png" class="part part1 elem1 animated slow hide" alt="">
+                        <div class=" elem1 animated slow hide">
+                            <img src="img/icon1.png" alt="">
+                            <div>
+                                <p>Libros en pdf e impresos</p>
+                                <p><b>Plataforma</b></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col s2 m2 l2">
+                        <div class="ajuste part2 elem2 animated slow hide">
+                            <span><img src="img/marcador.png" alt=""></span>
+                            <p class="text-lila"><b>Para iniciar</b></p>
+                            <p>Motivación e ideas <br>previas</p>
+                        </div>
+                        <img src="img/part2.png" class="part part2 elem2 animated slow hide" alt="">
+                        <div class=" elem2 animated slow hide"></div>
+                    </div>
+                    <div class="col s2 m2 l2">
+                        <div class="ajuste part3 elem3 animated slow hide">
+                            <span><img src="img/marcador2.png" alt=""></span>
+                            <p class="text-lila"><b>Explicación digital</b></p>
+                            <p class="text-lila"><b>Prácticas de aula</b></p>
+                        </div>
+                        <img src="img/part3.png" class="part part3 elem3 animated slow hide" alt="">
+                        <div class=" elem3 animated slow hide">
+                            <img src="img/icon2.png" alt="">
+                            <div>
+                                <p>Explicación con el libro</p>
+                                <p><b>Libro de contenidos</b></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col s2 m2 l2">
+                        <div class="ajuste part4 elem4 animated slow hide">
+                            <span><img src="img/marcador2.png" alt=""></span>
+                            <p class="text-lila"><b>Quices</b></p>
+                            <p class="text-lila"><b>Banco de actividades</b></p>
+                        </div>
+                        <img src="img/part4.png" class="part part4 elem4 animated slow hide" alt="">
+                        <div class=" elem4 animated slow hide">
+                            <img src="img/icon3.png" alt="">
+                            <div>
+                                <p>Actividades de aprendizaje</p>
+                                <p><b>Libro de actividades</b></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col s2 m2 l2">
+                        <div class="ajuste part5 elem5 animated slow hide">
+                            <span><img src="img/marcador.png" alt=""></span>
+                            <p class="text-lila"><b>Para Finalizar</b></p>
+                            <p>Autoevaluaciones interactivas <br> Otras formas de evaluar</p>
+                        </div>
+                        <img src="img/part5.png" class="part part5 elem5 animated slow hide" alt="">
+                        <div class=" elem5 animated slow hide"></div>
                     </div>
                 </div>
             </div>
@@ -354,34 +526,39 @@
             </a>
             <div class="content-centered">
                 <div class="col s12 m12 l12 center-align">
-                    <h3 class="blue-text">¿Cómo funcionan los proyectos<br>académicos y de aprendizaje servicio?</h3>
+                    <h3 id="ttl3-1-1" class="text-aqua title hide animated slow">¿Cómo funcionan los
+                        proyectos<br>académicos y de aprendizaje servicio?
+                    </h3>
                 </div>
                 <div class="col s12 m12 l12 margin-top">
                     <div class="col s12 m3 l3 offset-m2 offset-l2">
-                        <div class="card medium">
+                        <div id="card3-1-1" class="card medium hide animated slow">
                             <div class="card-image">
-                                <img src="img/card-1-1-1.png" class="">
+                                <img src="img/card-3-1-1.png" class="">
                             </div>
                             <div class="card-content">
                                 <p><b>Proyectos académicos</b></p>
-                                <p>En todos los grados, cada área cuenta con un proyecto académico para cada semestre.
+                                <p>En todos los grados, cada área cuenta con un proyecto académico para cada
+                                    semestre.
                                 </p>
-                                <a class="btn-floating waves-effect waves-light blue modal-trigger" href="#modal1">
+                                <a class="btn-floating waves-effect waves-light bck-aqua hidden modal-trigger"
+                                    href="#modal1">
                                     <i class="material-icons">add</i>
                                 </a>
                             </div>
                         </div>
                     </div>
                     <div class="col s12 m3 l3 offset-m2 offset-l2">
-                        <div class="card medium">
+                        <div id="card3-1-2" class="card medium hide animated slow">
                             <div class="card-image">
-                                <img src="img/card-1-1-1.png" class="">
+                                <img src="img/card-3-1-2.png" class="">
                             </div>
                             <div class="card-content">
                                 <p><b>Proyectos de<br>aprendizaje- servicio</b></p>
                                 <p>Seis proyectos para la secundaria, que pueden usarse por grados o el mismo proyecto
                                     con estudiantes de diferentes grados.</p>
-                                <a class="btn-floating waves-effect waves-light blue modal-trigger" href="#modal1">
+                                <a class="btn-floating waves-effect waves-light bck-aqua hidden modal-trigger"
+                                    href="#modal1">
                                     <i class="material-icons">add</i>
                                 </a>
                             </div>
@@ -397,59 +574,64 @@
             <div class="content-centered">
                 <div class="row">
                     <div class="col s12 m12 l12">
-                        <h6 class="red-text"><b>Novedad</b></h6>
-                        <h3 class="blue-text margin-top-none">¿Para qué aprendemos?</h3>
+                        <h6 id="ttl-3-2-1" class="text-red title hide animated slow"><b>Novedad</b></h6>
+                        <h3 id="ttl-3-2-2" class="text-aqua margin-top-none subtitle hide animated slow">¿Para qué
+                            aprendemos?</h3>
                     </div>
                 </div>
                 <div class="col s12 m12 l12 margin-top-xl">
                     <div class="container">
                         <div class="col s12 m3 l3">
-                            <div class="card x-small">
+                            <div id="card3-2-1" class="card x-small hide animated slow">
                                 <div class="card-image">
-                                    <img src="img/card-1-1-1.png" class="">
+                                    <img src="img/card-3-2-1.png" class="">
                                 </div>
                                 <div class="card-content">
                                     <p><b>Ciencias naturales</b></p>
-                                    <a class="btn-floating waves-effect waves-light blue modal-trigger" href="#modal1">
+                                    <a class="btn-floating waves-effect waves-light hidden bck-aqua hidden modal-trigger"
+                                        href="#modal1">
                                         <i class="material-icons">add</i>
                                     </a>
                                 </div>
                             </div>
                         </div>
                         <div class="col s12 m3 l3">
-                            <div class="card x-small">
+                            <div id="card3-2-2" class="card x-small hide animated slow">
                                 <div class="card-image">
-                                    <img src="img/card-1-1-1.png" class="">
+                                    <img src="img/card-3-2-2.png" class="">
                                 </div>
                                 <div class="card-content">
                                     <p><b>Matemáticas</b></p>
-                                    <a class="btn-floating waves-effect waves-light blue modal-trigger" href="#modal1">
+                                    <a class="btn-floating waves-effect waves-light hidden bck-aqua modal-trigger"
+                                        href="#modal1">
                                         <i class="material-icons">add</i>
                                     </a>
                                 </div>
                             </div>
                         </div>
                         <div class="col s12 m3 l3">
-                            <div class="card x-small">
+                            <div id="card3-2-3" class="card x-small hide animated slow">
                                 <div class="card-image">
-                                    <img src="img/card-1-1-1.png" class="">
+                                    <img src="img/card-3-2-3.png" class="">
                                 </div>
                                 <div class="card-content">
                                     <p><b>Lenguaje</b></p>
-                                    <a class="btn-floating waves-effect waves-light blue modal-trigger" href="#modal1">
+                                    <a class="btn-floating waves-effect waves-light hidden bck-aqua modal-trigger"
+                                        href="#modal1">
                                         <i class="material-icons">add</i>
                                     </a>
                                 </div>
                             </div>
                         </div>
                         <div class="col s12 m3 l3">
-                            <div class="card x-small">
+                            <div id="card3-2-4" class="card x-small hide animated slow">
                                 <div class="card-image">
-                                    <img src="img/card-1-1-1.png" class="">
+                                    <img src="img/card-3-2-4.png" class="">
                                 </div>
                                 <div class="card-content">
                                     <p><b>Ciencias sociales</b></p>
-                                    <a class="btn-floating waves-effect waves-light blue modal-trigger" href="#modal1">
+                                    <a class="btn-floating waves-effect waves-light hidden bck-aqua modal-trigger"
+                                        href="#modal1">
                                         <i class="material-icons">add</i>
                                     </a>
                                 </div>
@@ -465,44 +647,50 @@
             </a>
             <div class="content-centered">
                 <div class="col s12 m12 l12 center-align">
-                    <h3 class="blue-text">Educa desarrolla la competencia para<br>aprender a aprender</h3>
-                    <h5>Esta competencia se trabaja en tres ámbitos:</h5>
+                    <h3 id="ttl-4-1-1" class="text-morado title hide animated slow">Educa desarrolla la competencia
+                        para<br>aprender a aprender</h3>
+                    <h5 id="ttl-4-1-2" class="subtitle hide animated slow">Esta competencia se trabaja en tres ámbitos:
+                    </h5>
                 </div>
                 <div class="col s12 m12 l12 margin-top">
                     <div class="col s12 m2 l2 offset-m2 offset-l2">
-                        <div class="card small">
+                        <div id="card4-1-1" class="card small hide animated slow">
                             <div class="card-image">
-                                <img src="img/card-1-1-1.png" class="">
+                                <img src="img/card-4-1-1.png" class="">
                             </div>
                             <div class="card-content">
                                 <p>El uso de <b>herramientas para aprender</b></p>
-                                <a class="btn-floating waves-effect waves-light blue modal-trigger" href="#modal1">
+                                <a class="btn-floating waves-effect waves-light bck-morado hidden modal-trigger"
+                                    href="#modal1">
                                     <i class="material-icons">add</i>
                                 </a>
                             </div>
                         </div>
                     </div>
                     <div class="col s12 m2 l2 offset-m1 offset-l1">
-                        <div class="card small">
+                        <div id="card4-1-2" class="card small hide animated slow">
                             <div class="card-image">
-                                <img src="img/card-1-1-1.png" class="">
+                                <img src="img/card-4-1-2.png" class="">
                             </div>
                             <div class="card-content">
                                 <p>El desarrollo de <b>vocabulario académico</b> básico</p>
-                                <a class="btn-floating waves-effect waves-light blue modal-trigger" href="#modal1">
+                                <a class="btn-floating waves-effect waves-light bck-morado hidden modal-trigger"
+                                    href="#modal1">
                                     <i class="material-icons">add</i>
                                 </a>
                             </div>
                         </div>
                     </div>
                     <div class="col s12 m2 l2 offset-m1 offset-l1">
-                        <div class="card small">
+                        <div id="card4-1-3" class="card small hide animated slow">
                             <div class="card-image">
-                                <img src="img/card-1-1-1.png" class="">
+                                <img src="img/card-4-1-3.png" class="">
                             </div>
                             <div class="card-content">
-                                <p>Las actividades <b>para comprender</b> a través del diálogo con los textos</p>
-                                <a class="btn-floating waves-effect waves-light blue modal-trigger" href="#modal1">
+                                <p>Las actividades <b>para comprender</b> a través del diálogo con los textos
+                                </p>
+                                <a class="btn-floating waves-effect waves-light bck-morado hidden modal-trigger"
+                                    href="#modal1">
                                     <i class="material-icons">add</i>
                                 </a>
                             </div>
@@ -517,55 +705,137 @@
             </a>
             <div class="content-centered">
                 <div class="col s12 m12 l12 center-align">
-                    <h3 class="blue-text">Educa ofrece un sistema de evaluación</h3>
-                    <h5>Tipos de evaluaciones y módulo de calificaciones:</h5>
+                    <h3 id="ttl-5-1-1" class="text-amarillo title hide animated slow">Educa ofrece un sistema de
+                        evaluación</h3>
+                    <h5 id="ttl-5-1-2" class="subtitle hide animated slow">Tipos de evaluaciones y módulo de
+                        calificaciones:</h5>
                 </div>
                 <div class="col s12 m12 l12 margin-top">
                     <div class="col s12 m2 l2 offset-m2 offset-l2">
-                        <div class="card small">
+                        <div id="card5-1-1" class="card medium hide animated slow">
                             <div class="card-image">
-                                <img src="img/card-1-1-1.png" class="">
+                                <img src="img/card-5-1-1.png" class="">
                             </div>
                             <div class="card-content">
-                                <p><b>Evaluación diagnóstica</b></p>
-                                <p><i>-</i>Prueba de selección múltiple</p>
-                                <a class="btn-floating waves-effect waves-light blue modal-trigger" href="#modal1">
+                                <p class="left-align"><b>Evaluación diagnóstica</b></p>
+                                <p class="left-align"><i>-</i>Prueba de selección múltiple</p>
+                                <a class="btn-floating waves-effect waves-light hidden bck-amarillo modal-trigger"
+                                    href="#modal1">
                                     <i class="material-icons">add</i>
                                 </a>
                             </div>
                         </div>
                     </div>
                     <div class="col s12 m2 l2 offset-m1 offset-l1">
-                        <div class="card small">
+                        <div id="card5-1-2" class="card medium hide animated slow">
                             <div class="card-image">
-                                <img src="img/card-1-1-1.png" class="">
+                                <img src="img/card-5-1-2.png" class="">
                             </div>
                             <div class="card-content">
-                                <p><b>Evaluación de proceso</b></p>
-                                <p><i>-</i>Quices</p>
-                                <p><i>-</i>Prepara tu prueba Saber</p>
-                                <p><i>-</i>Autoevaluaciones digitales</p>
-                                <p><i>-</i>Evaluaciones de proceso</p>
-                                <p><i>-</i>Otra forma de evaluar</p>
-                                <p><i>-</i>Fichas de refuerzo</p>
-                                <a class="btn-floating waves-effect waves-light blue modal-trigger" href="#modal1">
+                                <p class="left-align"><b>Evaluación de proceso</b></p>
+                                <p class="left-align"><i>-</i>Quices</p>
+                                <p class="left-align"><i>-</i>Prepara tu prueba Saber</p>
+                                <p class="left-align"><i>-</i>Autoevaluaciones digitales</p>
+                                <p class="left-align"><i>-</i>Evaluaciones de proceso</p>
+                                <p class="left-align"><i>-</i>Otra forma de evaluar</p>
+                                <p class="left-align"><i>-</i>Fichas de refuerzo</p>
+                                <a class="btn-floating waves-effect waves-light hidden bck-amarillo modal-trigger"
+                                    href="#modal1">
                                     <i class="material-icons">add</i>
                                 </a>
                             </div>
                         </div>
                     </div>
                     <div class="col s12 m2 l2 offset-m1 offset-l1">
-                        <div class="card small">
+                        <div id="card5-1-3" class="card medium hide animated slow">
                             <div class="card-image">
-                                <img src="img/card-1-1-1.png" class="">
+                                <img src="img/card-5-1-3.png" class="">
                             </div>
                             <div class="card-content">
-                                <p><b>Evaluación final</b></p>
-                                <p><i>-</i>Prueba Saber</p>
-                                <a class="btn-floating waves-effect waves-light blue modal-trigger" href="#modal1">
+                                <p class="left-align"><b>Evaluación final</b></p>
+                                <p class="left-align"><i>-</i>Prueba Saber</p>
+                                <a class="btn-floating waves-effect waves-light hidden bck-amarillo modal-trigger"
+                                    href="#modal1">
                                     <i class="material-icons">add</i>
                                 </a>
                             </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="6-1" class="row fondo">
+            <a href="#intro">
+                <img src="img/logo2.png" alt="Logo" class="logo-home">
+            </a>
+            <div class="content-centered">
+                <div class="col s12 m12 l12 center-align">
+                    <h3 id="ttl-6-1-1" class="text-verde title hide animated slow">Las secuencias didácticas de Educa</h3>
+                </div>
+                <div class="col s12 m12 l12 margin-top">
+                    <div class="row menu">
+                        <div id="item-1" class="col s12 m2 l2 offset-m1 offset-l1 center-align  animated slow hide active">
+                            <img src="img/boton1hv.png" width="70%" alt="" class="animated slow pulse infinite">
+                            <hr>
+                            <h6>Estudiantes</h5>
+                        </div>
+                        <div id="item-2" class="col s12 m2 l2 offset-m1 offset-l1 center-align animated slow hide ">
+                            <img src="img/boton2.png" width="70%" alt="" class="animated slow infinite">
+                            <hr>
+                            <h6>Docentes</h5>
+                        </div>
+                        <div id="item-3" class="col s12 m2 l2 offset-m1 offset-l1 center-align animated slow hide ">
+                                <img src="img/boton3.png" width="70%" alt="" class="animated slow infinite">
+                                <hr>
+                                <h6>Padres de familia</h5>
+                        </div>
+                        <div id="item-4" class="col s12 m2 l2 offset-m1 offset-l1 center-align animated slow hide ">
+                                <img src="img/boton4.png" width="70%" alt="" class="animated slow infinite">
+                                <hr>
+                                <h6>Colegio</h6>
+                            
+                        </div>
+                    </div>
+                    <div class="row grouper hide animated slow">
+                        <span class="selector"><img src="img/selector.png" alt=""></span>
+                        <div class="margin-top"></div>
+                    </div>
+                    <div class="row selectable hide animated slow">
+                        <div class="col s1 m1 l1 center-align selected">
+                            <p>Contenidos<br>impresos</p>
+                        </div>
+                        <div class="col s1 m1 l1 center-align selected">
+                            <p>Contenidos<br>digitales</p>
+                        </div>
+                        <div class="col s1 m1 l1 center-align selected">
+                            <p>Proyectos de<br> aprendizaje-servicio</p>
+                        </div>
+                        <div class="col s1 m1 l1 center-align selected">
+                            <p>Proyectos<br>académicos</p>
+                        </div>
+                        <div class="col s1 m1 l1 center-align selected">
+                            <p>Sistema de<br>evaluación</p>
+                        </div>
+                        <div class="col s1 m1 l1 center-align selected">
+                            <p>Sistema de<br>preparación de pruebas</p>
+                        </div>
+                        <div class="col s1 m1 l1 center-align selected">
+                            <p>Herramientas de <br>comunicación</p>
+                        </div>
+                        <div class="col s1 m1 l1 center-align">
+                            <p>Reportes <br>de evaluación</p>
+                        </div>
+                        <div class="col s1 m1 l1 center-align">
+                            <p>Reportes <br>de asistencia</p>
+                        </div>
+                        <div class="col s1 m1 l1 center-align">
+                            <p>Plan <br>de clases</p>
+                        </div>
+                        <div class="col s1 m1 l1 center-align">
+                            <p>Consultoría <br>técnica y <br>pedagógica</p>
+                        </div>
+                        <div class="col s1 m1 l1 center-align">
+                            <p>Información <br>analítica</p>
                         </div>
                     </div>
                 </div>
@@ -577,44 +847,50 @@
             </a>
             <div class="content-centered">
                 <div class="col s12 m12 l12 center-align">
-                    <h3 class="blue-text">Educa cuenta con un servicio integrado<br>de formación y consultoría</h3>
-                    <h5>Educa incluye un servicio de consultoría en tres áreas:</h5>
+                    <h3 id="ttl-7-1-1" class="text-fucsia title hide animated slow">Educa cuenta con un servicio
+                        integrado<br>de formación y consultoría
+                    </h3>
+                    <h5 id="ttl-7-1-2" class="subtitle hide animated slow">Educa incluye un servicio de consultoría en
+                        tres áreas:</h5>
                 </div>
                 <div class="col s12 m12 l12 margin-top">
                     <div class="col s12 m2 l2 offset-m2 offset-l2">
-                        <div class="card small">
+                        <div id="card7-1-1" class="card small hide animated slow">
                             <div class="card-image">
-                                <img src="img/card-1-1-1.png" class="">
+                                <img src="img/card-7-1-1.png" class="">
                             </div>
                             <div class="card-content">
                                 <p><b>Entrenamiento digital</b></p>
-                                <a class="btn-floating waves-effect waves-light blue modal-trigger" href="#modal1">
+                                <a class="btn-floating waves-effect waves-light hidden bck-fucsia modal-trigger"
+                                    href="#modal1">
                                     <i class="material-icons">add</i>
                                 </a>
                             </div>
                         </div>
                     </div>
                     <div class="col s12 m2 l2 offset-m1 offset-l1">
-                        <div class="card small">
+                        <div id="card7-1-2" class="card small hide animated slow">
                             <div class="card-image">
-                                <img src="img/card-1-1-1.png" class="">
+                                <img src="img/card-7-1-2.png" class="">
                             </div>
                             <div class="card-content">
                                 <p><b>Formación en competencias digitales pedagógicas</b></p>
-                                <a class="btn-floating waves-effect waves-light blue modal-trigger" href="#modal1">
+                                <a class="btn-floating waves-effect waves-light hidden bck-fucsia modal-trigger"
+                                    href="#modal1">
                                     <i class="material-icons">add</i>
                                 </a>
                             </div>
                         </div>
                     </div>
                     <div class="col s12 m2 l2 offset-m1 offset-l1">
-                        <div class="card small">
+                        <div id="card7-1-3" class="card small hide animated slow">
                             <div class="card-image">
-                                <img src="img/card-1-1-1.png" class="">
+                                <img src="img/card-7-1-3.png" class="">
                             </div>
                             <div class="card-content">
                                 <p><b>Generación de estrategias didácticas de mejoramiento</b></p>
-                                <a class="btn-floating waves-effect waves-light blue modal-trigger" href="#modal1">
+                                <a class="btn-floating waves-effect waves-light hidden bck-fucsia modal-trigger"
+                                    href="#modal1">
                                     <i class="material-icons">add</i>
                                 </a>
                             </div>

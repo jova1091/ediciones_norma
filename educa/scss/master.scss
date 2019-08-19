@@ -3,6 +3,7 @@ $gris: #929799;
 $rojo: #E1343A;
 $fucsia: #DF388E;
 $verde: #00A082;
+$claroVerde: rgba(0, 160, 131, 0.1);
 $amarillo: #EF8F22;
 $morado: #613B8F;
 $aqua: #00A3AD;
@@ -24,7 +25,8 @@ body {
         font-family: 'Bryant Pro' !important;
         font-weight: normal;
 
-        b,strong{
+        b,
+        strong {
             font-weight: bold;
         }
     }
@@ -60,47 +62,162 @@ body {
     margin-top: 0px;
 }
 
+.hidden {
+    display: none !important;
+}
+
 .x-small {
     height: 250px;
 }
 
-.fondo{
+.fondo {
     background-image: url("../img/fondo.png");
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
-h3{
+h3 {
     font-family: 'Bryant Pro';
     font-weight: bold;
 }
 
-h5{
+h5 {
     font-family: 'Bryant Pro';
     font-weight: normal;
 }
 
-.text-azul{
+.text-azul {
     color: $azul;
 }
 
-.bck-azul{
+.bck-azul {
     background-color: $azul;
-    &:hover,&:focus{
+
+    &:hover,
+    &:focus {
         background-color: $blanco;
         border: 1px solid $azul;
-        i{
+
+        i {
             color: $azul;
         }
     }
 }
 
-.text-red{
+.text-aqua {
+    color: $aqua;
+}
+
+.bck-aqua {
+    background-color: $aqua;
+
+    &:hover,
+    &:focus {
+        background-color: $blanco;
+        border: 1px solid $aqua;
+
+        i {
+            color: $aqua;
+        }
+    }
+}
+
+.text-lila {
+    color: $lila;
+}
+
+.bck-lila {
+    background-color: $lila;
+
+    &:hover,
+    &:focus {
+        background-color: $blanco;
+        border: 1px solid $lila;
+
+        i {
+            color: $lila;
+        }
+    }
+}
+
+.text-morado {
+    color: $morado;
+}
+
+.bck-morado {
+    background-color: $morado;
+
+    &:hover,
+    &:focus {
+        background-color: $blanco;
+        border: 1px solid $morado;
+
+        i {
+            color: $morado;
+        }
+    }
+}
+
+.text-amarillo {
+    color: $amarillo;
+}
+
+.bck-amarillo {
+    background-color: $amarillo;
+
+    &:hover,
+    &:focus {
+        background-color: $blanco;
+        border: 1px solid $amarillo;
+
+        i {
+            color: $amarillo;
+        }
+    }
+}
+
+.text-verde {
+    color: $verde;
+}
+
+.bck-verde {
+    background-color: $verde;
+
+    &:hover,
+    &:focus {
+        background-color: $blanco;
+        border: 1px solid $verde;
+
+        i {
+            color: $verde;
+        }
+    }
+}
+
+.text-fucsia {
+    color: $fucsia;
+}
+
+.bck-fucsia {
+    background-color: $fucsia;
+
+    &:hover,
+    &:focus {
+        background-color: $blanco;
+        border: 1px solid $fucsia;
+
+        i {
+            color: $fucsia;
+        }
+    }
+}
+
+.text-red {
     color: $rojo;
 }
 
-.logo-home{
+.logo-home {
     position: relative;
     width: 40px;
     height: auto;
@@ -108,6 +225,104 @@ h5{
     right: 20px;
     top: 20px;
 }
+
+// ajuste en modal
+//****************************************************************
+.modal{
+    max-height: 80%;
+    min-height: 80%;
+    width: 90%;
+
+    .modal-content{
+        padding: 0;
+    }
+}
+
+.video-responsive {
+    width: auto;
+    height: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    video {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+// ajuste en slider dentro de modal
+//****************************************************************
+.btn-close {
+    position: absolute;
+    z-index: 1056;
+    height: 30px;
+    width: 30px;
+    top: 15px;
+    left: calc(50% - 15px);
+    padding: 5px;
+    background: $blanco;
+    color: $azul;
+    border-radius: 50%;
+    border: 1px solid $azul;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider{
+    .slides{
+        background-color: $azul;
+        
+        li{
+            img{
+                float: right;
+                width: 50%;
+                background-size: cover;
+                background-position: center center;
+                background-repeat: no-repeat;
+            }
+
+            .caption{
+                float: left;
+                min-width: 50%;
+                max-width: 50%;
+                height: 100%;
+                top: 0;
+                left: 0;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+                padding: 20px 20px 20px 40px !important;
+
+                hr{
+                    width: 200px;
+                    margin: 15px 0;
+                }
+            }
+        }
+    }
+
+
+    .indicators{
+        bottom: 50% !important;
+        right: -50px !important;
+        left: auto !important;
+        transform: rotate(90deg) !important;
+        
+        li{
+            background-color: $blanco !important;
+            
+            &.active{
+                background-color: $azul !important;
+            }
+        }
+    }
+
+} 
 
 // Flechas de navegación
 //****************************************************************
@@ -170,10 +385,10 @@ h5{
 
     .circulo {
         position: absolute;
-        min-width: 370px;
-        max-width: 370px;
-        min-height: 370px;
-        max-height: 370px;
+        min-width: 360px;
+        max-width: 360px;
+        min-height: 360px;
+        max-height: 360px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -182,6 +397,30 @@ h5{
 
         &.azul {
             background-color: $azul;
+        }
+
+        &.morado {
+            background-color: $morado;
+        }
+
+        &.aqua {
+            background-color: $aqua;
+        }
+
+        &.amarillo {
+            background-color: $amarillo;
+        }
+
+        &.lila {
+            background-color: $lila;
+        }
+
+        &.fucsia {
+            background-color: $fucsia;
+        }
+
+        &.verde {
+            background-color: $verde;
         }
 
         img {
@@ -197,6 +436,12 @@ h5{
             line-height: 1;
         }
     }
+}
+
+// Trancisión circulo de colores
+//****************************************************************
+#sections {
+    transition: 2s linear;
 }
 
 // Enlaces a la derecha
@@ -287,9 +532,23 @@ h5{
         }
     }
 
+    &.medium{
+
+        .card-content{
+            max-height: inherit !important;
+        }
+    }
+
     .card-content {
         padding: 15px 15px 40px;
         text-align: center;
+
+        p{
+            i{
+                color: $amarillo;
+                margin-right: 5px;
+            }
+        }
 
         .btn-floating {
             width: 50px;
@@ -306,5 +565,224 @@ h5{
                 font-weight: bolder;
             }
         }
+    }
+}
+
+.part{
+    width: 130%;
+
+    &.part2 {
+        margin-left: -30px;
+    }
+    &.part3 {
+        margin-left: -60px;
+    }
+    &.part4 {
+        margin-left: -90px;
+    }
+    &.part5 {
+        margin-left: -120px;
+    }
+}
+
+.ajuste{
+    height: 100px;
+
+    p{
+        margin: 0 0 28px 0;
+    }
+
+    ~ div{
+        height: 40px;
+        width: max-content;
+        display: flex;
+        align-items: center;
+        margin-top: 10px;
+
+        img{
+            width: 40px;
+            height: auto;
+            margin-right: 5px
+        }
+
+        p{
+            margin: 0;
+            font-size: 13px;
+        }
+
+    }
+
+    &.part1{
+
+        &~div{
+            margin-left: 20px;
+        }
+    }
+
+    &.part2 {
+        margin-left: 35px;
+
+        p{
+            margin-bottom: 0 !important;
+        }
+
+        span{
+            position: absolute;
+            margin-left: -20px;
+            margin-top: 10px;
+        }
+    }
+    &.part3 {
+        margin-left: -10px;
+
+        span{
+            position: absolute;
+            margin-left: -20px;
+            margin-top: 10px;
+        }
+
+        &~div{
+            margin-left: -35px;
+        }
+    }
+    &.part4 {
+        margin-left: -30px;
+
+        span{
+            position: absolute;
+            margin-left: -20px;
+            margin-top: 10px;
+            z-index: -1;
+        }
+
+        &~div{
+            margin-left: -60px;
+        }
+    }
+    &.part5 {
+        margin-left: -70px;
+        height: 80px;
+        margin-top: 20px;
+
+        p{
+            margin-bottom: 0 !important;
+        }
+
+        span{
+            position: absolute;
+            margin-left: -20px;
+            margin-top: 9px;
+            z-index: -1;
+        }
+    }
+}
+
+
+.menu{
+    div{
+        img{
+            background-color: white;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+    }
+
+    .active{
+        hr{
+            border: 2px solid;
+            border-color: $verde;
+        }
+
+        h6{
+            color: $verde;
+            font-weight: 900;
+        }
+    }
+}
+
+.grouper{
+    margin-top: 50px;
+    margin-left: .75rem !important;
+    height: 15px;
+    border: 3px solid $verde;
+    border-bottom: 0px;
+    border-radius: 20px 20px 0 0;
+    background-color: $claroVerde;
+    width: 760px;
+
+    .selector{
+        position: absolute;
+        margin-top: -66px;
+        margin-left: 170px;
+
+        img{
+            width: 45px
+        }
+    }
+}
+
+.selectable{
+    margin-left: .75rem !important;
+
+    div{
+        height: 110px;
+        border-right: 1px dashed $verde;
+        
+        &.selected{
+            background-color: $claroVerde;
+            
+            p{
+                font-weight: bolder;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1049px) and (max-width: 1320px ) {
+    .circulo {
+        min-width: 280px !important;
+        max-width: 280px !important;
+        min-height: 280px !important;
+        max-height: 280px !important;
+    }
+}
+
+@media only screen and (min-width: 993px) and (max-width: 1048px ) {
+    .circulo {
+        min-width: 260px !important;
+        max-width: 260px !important;
+        min-height: 260px !important;
+        max-height: 260px !important;
+    }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 992px ) {
+    .content-centered {
+        min-height: auto;
+    }
+
+    .circulo {
+        min-width: 580px !important;
+        max-width: 580px !important;
+        min-height: 580px !important;
+        max-height: 580px !important;
+    }
+}
+
+@media only screen and (min-width: 426px) and (max-width: 768px ) {
+    .circulo {
+        min-width: 345px !important;
+        max-width: 345px !important;
+        min-height: 345px !important;
+        max-height: 345px !important;
+    }
+}
+
+@media only screen and (max-width: 425px ) {
+    .circulo {
+        min-width: 250px !important;
+        max-width: 250px !important;
+        min-height: 250px !important;
+        max-height: 250px !important;
     }
 }
