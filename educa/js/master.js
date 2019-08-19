@@ -355,7 +355,7 @@ function resetEnlaces() {
 //***********************************************************
 function intro() {
     setTimeout(function () {
-        $("#sections").removeClass('animated');
+        $("#sections").removeClass('rotateIn infinite');
         $(".circulo").removeClass('hide').addClass('fadeIn');
         setTimeout(function () {
             $("#logo").removeClass('hide').addClass('slideInDown');
