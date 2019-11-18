@@ -129,12 +129,11 @@ h5 {
 
 .bck-lila {
     background-color: $lila;
-
     &:hover,
     &:focus {
         background-color: $blanco;
         border: 1px solid $lila;
-
+        color: $lila;
         i {
             color: $lila;
         }
@@ -283,6 +282,9 @@ h5 {
                 background-size: cover;
                 background-position: center center;
                 background-repeat: no-repeat;
+                &.full {
+                    width: 100%;
+                }
             }
 
             .caption{

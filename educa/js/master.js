@@ -476,6 +476,9 @@ function slide2_3() {
                         $(".elem4").removeClass('hide').addClass('zoomIn');
                         setTimeout(function () {
                             $(".elem5").removeClass('hide').addClass('zoomIn');
+                            setTimeout(function () {
+                                $(".elem6").removeClass('hide').addClass('zoomIn, pulse');
+                            }, 1100)
                         }, 1100);
                     }, 1100);
                 }, 1100);
